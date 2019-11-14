@@ -15,10 +15,4 @@ soup = BeautifulSoup(r.content, 'html5lib')
 
 names = []
 
-tables = soup.find('div', attrs = {'id':'result'})
-'''
-for row in tables.findAll('div', attrs = {'id':'result'}):
-      name = {}
-      names.append(name)
-'''
-print(tables)
+print(soup.find(id="results"))
